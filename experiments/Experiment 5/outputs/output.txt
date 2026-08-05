@@ -1,0 +1,26 @@
+============================================================
+Experiment 5: Sentiment Analysis & Document Classification
+============================================================
+Loading sentiment-analysis pipeline...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/104 [00:00<?, ?it/s]Loading weights: 100%|##########| 104/104 [00:00<00:00, 2188.31it/s]
+
+--- Sentiment Analysis Results ---
+
+Review : The new smartphone has an amazing camera and battery life!
+Result : POSITIVE (1.0)
+
+Review : The delivery was late and the packaging was damaged.
+Result : NEGATIVE (1.0)
+
+Loading zero-shot-classification pipeline (BART-large-MNLI)...
+Loading weights:   0%|          | 0/515 [00:00<?, ?it/s]Loading weights:  33%|###3      | 170/515 [00:00<00:00, 1690.05it/s]Loading weights:  66%|######6   | 340/515 [00:00<00:00, 1645.10it/s]Loading weights: 100%|##########| 515/515 [00:00<00:00, 1775.38it/s]
+
+--- Zero-Shot Document Classification Results ---
+
+Document: The central bank raised interest rates to control rising inflation.
+
+  Economy     : 0.678
+  Politics    : 0.126
+  Technology  : 0.121
+  Sports      : 0.075

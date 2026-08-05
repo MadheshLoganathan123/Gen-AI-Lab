@@ -1,0 +1,28 @@
+============================================================
+Experiment 4: Text Summarization & Question Answering
+============================================================
+
+--- Part A: Text Summarization (BART) ---
+
+Input Article:
+ Generative AI refers to a class of artificial intelligence models capable of producing new content such as text, images, audio, and video. Large Language Models (LLMs) such as GPT and LLaMA are trained on massive text corpora and can perform a wide range of natural language tasks including translation, summarization, and question answering. These models are increasingly being deployed in industry applications ranging from customer support to software development, transforming how humans interact with machines. 
+
+Loading BART summarization pipeline...
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\GenAI_Lab_Experiments\experiments\experiment_4_summarization_qa\summarization_qa.py", line 82, in <module>
+    main()
+  File "C:\Users\Admin\Desktop\GenAI_Lab_Experiments\experiments\experiment_4_summarization_qa\summarization_qa.py", line 67, in main
+    summary_text = run_summarization(ARTICLE)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\GenAI_Lab_Experiments\experiments\experiment_4_summarization_qa\summarization_qa.py", line 36, in run_summarization
+    summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\transformers\pipelines\__init__.py", line 974, in pipeline
+    normalized_task, targeted_task, task_options = check_task(task)
+                                                   ^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\transformers\pipelines\__init__.py", line 359, in check_task
+    return PIPELINE_REGISTRY.check_task(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\transformers\pipelines\base.py", line 1358, in check_task
+    raise KeyError(f"Unknown task {task}, available tasks are {self.get_supported_tasks()}")
+KeyError: "Unknown task summarization, available tasks are ['any-to-any', 'audio-classification', 'automatic-speech-recognition', 'depth-estimation', 'document-question-answering', 'feature-extraction', 'fill-mask', 'image-classification', 'image-feature-extraction', 'image-segmentation', 'image-text-to-text', 'keypoint-matching', 'mask-generation', 'ner', 'object-detection', 'sentiment-analysis', 'table-question-answering', 'text-classification', 'text-generation', 'text-to-audio', 'text-to-speech', 'token-classification', 'video-classification', 'zero-shot-audio-classification', 'zero-shot-classification', 'zero-shot-image-classification', 'zero-shot-object-detection']"
