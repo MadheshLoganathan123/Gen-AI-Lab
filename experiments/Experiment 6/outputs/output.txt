@@ -1,0 +1,27 @@
+============================================================
+Experiment 6: RAG System Using Vector Databases
+============================================================
+
+Loading sentence-transformer embedding model (all-MiniLM-L6-v2)...
+Encoding documents and building FAISS index...
+  Indexed 6 document(s) with embedding dimension 384.
+
+Loading text-generation LLM (google/flan-t5-base)...
+
+Query: What is RAG in AI?
+Retrieved Context:
+  [1] (L2=0.3821) Retrieval-Augmented Generation combines document retrieval with text generation.
+  [2] (L2=0.6104) Vector databases store embeddings and support fast similarity search.
+Answer: RAG combines document retrieval with text generation using vector databases.
+
+Query: Where is the Eiffel Tower located?
+Retrieved Context:
+  [1] (L2=0.2954) The Eiffel Tower is located in Paris, France and was completed in 1889.
+  [2] (L2=0.9217) FAISS is an open-source library developed by Facebook AI for efficient similarity search.
+Answer: Paris, France
+
+Query: What is FAISS used for?
+Retrieved Context:
+  [1] (L2=0.3102) FAISS is an open-source library developed by Facebook AI for efficient similarity search.
+  [2] (L2=0.4873) Vector databases store embeddings and support fast similarity search.
+Answer: FAISS is used for efficient similarity search over vector embeddings.

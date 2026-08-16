@@ -1,10 +1,10 @@
 Loading GPT-2 text generation pipeline...
+Loading weights: 100%|█████████████████████████████████████| 148/148 [00:00<00:00, 1599.91it/s]
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:  55%|#####4    | 81/148 [00:00<00:00, 807.05it/s]Loading weights: 100%|##########| 148/148 [00:00<00:00, 738.28it/s]
 
 Input Prompt: Artificial Intelligence will transform the future of
 
-[transformers] Passing `generation_config` together with generation-related arguments=({'top_p', 'max_length', 'temperature', 'top_k', 'num_return_sequences', 'do_sample'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[transformers] Passing `generation_config` together with generation-related arguments=({'top_k', 'temperature', 'do_sample', 'max_length', 'num_return_sequences', 'top_p'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
 [transformers] Both `max_new_tokens` (=256) and `max_length`(=60) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
 [transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer GPT2Tokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
 --- Generated Text 1 ---
@@ -24,7 +24,7 @@ In this article we will focus on the most important types of information that hu
 
 The following are the types of information that we will examine:
 
-Information that is most easily acquired and shared by individuals � this is the most commonly found information that comes out of human interaction. It is the most important type of information that is shared with each and every other
+Information that is most easily acquired and shared by individuals – this is the most commonly found information that comes out of human interaction. It is the most important type of information that is shared with each and every other
 
 --- Generated Text 2 ---
 Artificial Intelligence will transform the future of our work. With AI, we may be able to do things that other people aren't able to. You can't have it all, but you can create artificial intelligence that does things we don't even have to think about.
@@ -37,5 +37,4 @@ I think it's a real opportunity to transform the way we live. I think it's a rea
 
 I think it's a real opportunity to transform how people think about our work. I think it's a real opportunity to transform how we're working. It's an opportunity to transform how we live. I think it's a real opportunity to transform how we're looking at our work.
 
-I think it's a real opportunity to transform how we're thinking about our work. I think it's a real opportunity to transform how we're looking at our work. I
-
+I think it's a real opportunity to transform how we're thinking about our work. I think it's a real opportunity to transform how we're looking at our work. 

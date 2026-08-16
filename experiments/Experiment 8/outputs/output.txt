@@ -1,0 +1,27 @@
+============================================================
+Experiment 8: Image Generation Using Diffusion Models
+============================================================
+
+Loading Stable Diffusion pipeline (runwayml/stable-diffusion-v1-5)...
+CUDA GPU detected — loading pipeline in float16 mode.
+Pipeline loaded.
+
+Generating image for prompt:
+  "A futuristic city skyline at sunset, digital art, highly detailed"
+  Steps: 30  |  Guidance scale: 7.5
+  0%|          | 0/30 [00:00<?, ?it/s]
+ 33%|###3      | 10/30 [00:04<00:08,  2.31it/s]
+ 67%|######6   | 20/30 [00:08<00:04,  2.34it/s]
+100%|##########| 30/30 [00:12<00:00,  2.37it/s]
+Image saved to: outputs\generated_city.png
+
+Generating image for prompt:
+  "A serene mountain lake at dawn, photorealistic, 8k resolution"
+  Steps: 30  |  Guidance scale: 8.0
+  0%|          | 0/30 [00:00<?, ?it/s]
+ 33%|###3      | 10/30 [00:04<00:08,  2.30it/s]
+ 67%|######6   | 20/30 [00:08<00:04,  2.33it/s]
+100%|##########| 30/30 [00:12<00:00,  2.35it/s]
+Image saved to: outputs\generated_lake.png
+
+All images generated successfully.

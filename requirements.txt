@@ -1,0 +1,38 @@
+# =============================================================
+# CS4V48 - GenAI and LLM Laboratory
+# Universal Requirements — covers all 12 experiments
+# Install with: pip install -r requirements.txt
+# =============================================================
+
+# Core deep-learning framework
+torch>=2.0.0
+
+# Hugging Face ecosystem
+transformers>=4.35.0
+datasets>=2.14.0
+evaluate>=0.4.0
+accelerate>=0.21.0
+
+# Diffusion models (Experiment 8, 11)
+diffusers>=0.21.0
+
+# Sentence embeddings + vector search (Experiment 6)
+sentence-transformers>=2.2.0
+faiss-cpu>=1.7.4
+
+# Numerical computing
+numpy>=1.24.0
+
+# Image handling (Experiment 8, 9, 11)
+Pillow>=9.5.0
+
+# Text-to-speech (Experiment 11)
+gTTS>=2.3.2
+
+# Web deployment & evaluation (Experiment 12)
+gradio>=3.50.0
+rouge-score>=0.1.2
+
+# Utilities
+scikit-learn>=1.3.0
+requests>=2.31.0
