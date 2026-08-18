@@ -1,0 +1,37 @@
+============================================================
+Experiment 10: Foundation Model Fine-Tuning & Evaluation
+============================================================
+Device: cpu
+
+Preparing domain-specific Customer Support Intent dataset...
+  Training samples  : 12
+  Validation samples: 3
+
+Loading Tokenizer (distilbert-base-uncased-finetuned-sst-2-english)...
+Loading base pre-trained model: distilbert-base-uncased-finetuned-sst-2-english ...
+
+Starting model fine-tuning...
+  Epoch 1/3 - Training Loss: 0.9831 | Eval Loss: 1.0420 | Eval Accuracy: 0.3333 | Eval F1: 0.1667
+  Epoch 2/3 - Training Loss: 0.9932 | Eval Loss: 0.9955 | Eval Accuracy: 0.3333 | Eval F1: 0.1667
+  Epoch 3/3 - Training Loss: 1.0350 | Eval Loss: 0.9678 | Eval Accuracy: 0.6667 | Eval F1: 0.5556
+
+Fine-tuning completed successfully.
+
+--- Post-Training Evaluation on Validation Set ---
+  eval_loss           : 0.9678
+  eval_accuracy       : 0.6667
+  eval_f1             : 0.5556
+  eval_runtime        : 0.4648 s
+  eval_samples_per_sec: 6.4540
+  eval_steps_per_sec  : 2.1510
+  epoch               : 3.0000
+
+--- Inference on New Unseen Customer Queries ---
+Query : "The software keeps throwing a fatal memory leak error."
+Intent: Technical Issue (Confidence: 0.4359)
+
+Query : "Could you refund the subscription fee charged this morning?"
+Intent: Billing / Refund (Confidence: 0.4362)
+
+Query : "Where can I read the terms of service and product roadmap?"
+Intent: General Inquiry (Confidence: 0.3739)

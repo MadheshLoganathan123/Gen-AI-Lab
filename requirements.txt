@@ -12,6 +12,7 @@ transformers>=4.35.0
 datasets>=2.14.0
 evaluate>=0.4.0
 accelerate>=0.21.0
+sentencepiece>=0.1.99
 
 # Diffusion models (Experiment 8, 11)
 diffusers>=0.21.0
@@ -22,6 +23,7 @@ faiss-cpu>=1.7.4
 
 # Numerical computing
 numpy>=1.24.0
+scipy>=1.10.0
 
 # Image handling (Experiment 8, 9, 11)
 Pillow>=9.5.0
@@ -32,6 +34,8 @@ gTTS>=2.3.2
 # Web deployment & evaluation (Experiment 12)
 gradio>=3.50.0
 rouge-score>=0.1.2
+sacrebleu>=2.3.0
+nltk>=3.8.0
 
 # Utilities
 scikit-learn>=1.3.0

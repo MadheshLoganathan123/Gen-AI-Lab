@@ -1,0 +1,41 @@
+============================================================
+Experiment 11: Multimodal Generative AI Application
+============================================================
+
+Input Topic: an astronaut discovering an ancient bioluminescent crystal on Mars
+
+--- Modality 1: Creative Text Generation ---
+Generating story using text generation model (google/flan-t5-base)...
+Generated Story:
+  "The astronauts are going to Mars to look at the ancient bioluminescent crystals.
+   To their shock, they are able to see the crystals glowing faintly in the dark
+   Martian cave. They reveal that the crystal is part of a massive geological
+   structure. The astronauts are thrilled and hope the crystal will help them
+   unlock the mysteries of life on Mars."
+
+--- Modality 2: Text-to-Image Generation (Stable Diffusion) ---
+No GPU detected - loading Stable Diffusion in float32 mode (CPU).
+
+Generating illustration for prompt:
+  "An astronaut standing in a Martian cave discovering a glowing bioluminescent
+   blue crystal, cinematic lighting, ultra detailed, 8k"
+  20%|##        |  5/25 [02:18<09:10, 27.51s/it]
+  40%|####      | 10/25 [04:09<05:25, 21.68s/it]
+  60%|######    | 15/25 [05:57<03:44, 22.44s/it]
+  80%|########  | 20/25 [07:45<01:53, 22.69s/it]
+ 100%|##########| 25/25 [09:34<00:00, 22.97s/it]
+
+Illustration saved to: experiments\Experiment 11\outputs\story_illustration.png
+
+--- Modality 3: Text-to-Speech Audio Generation (TTS) ---
+Synthesizing speech narration with gTTS...
+Speech audio narration saved to: experiments\Experiment 11\outputs\story_narration.mp3
+
+============================================================
+Multimodal Pipeline Execution Completed Successfully!
+  Text Narrative : "The astronauts are going to Mars to look at the ancient
+                    bioluminescent crystals. To their shock, they are able to
+                    see the crystals glowing faintly in the dark Martian cave."
+  Visual Output  : experiments\Experiment 11\outputs\story_illustration.png
+  Audio Output   : experiments\Experiment 11\outputs\story_narration.mp3
+============================================================

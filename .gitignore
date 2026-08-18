@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Large ML model files (too big for GitHub's 100MB limit)
+*.safetensors
+*.pt
+*.bin
+*.ot
+fine_tuned_model/
+**/fine_tuned_model/
+**/checkpoint-*/
+
+# Hugging Face cache
+.cache/
+
+# Generated audio/image outputs (binary)
+*.mp3
+*.wav
+*.png
+*.jpg
+*.jpeg
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db

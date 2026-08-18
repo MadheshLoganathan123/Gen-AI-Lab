@@ -1,0 +1,34 @@
+============================================================
+Experiment 12: Model Evaluation & Web App Deployment
+============================================================
+
+--- Part A: Model Evaluation (ROUGE & BLEU Benchmarking) ---
+
+Loading summarization model (facebook/bart-large-cnn)...
+Generating summaries for benchmark test set...
+
+[Sample 1]
+  Reference : Transformers revolutionized NLP using self-attention to process words in parallel.
+  Generated : Transformers have revolutionized Natural Language Processing by enabling models to process words in parallel through self-attention mechanisms.
+
+[Sample 2]
+  Reference : RLHF aligns LLMs with human preferences to improve safety and helpfulness.
+  Generated : Reinforcement Learning from Human Feedback (RLHF) aligns large language models with human preferences, improving helpfulness, accuracy, and safety.
+
+Computing ROUGE and BLEU scores...
+
+Evaluation Results:
+  ROUGE-1 Score : 0.5862
+  ROUGE-2 Score : 0.2963
+  ROUGE-L Score : 0.4483
+  BLEU Score    : 0.1392
+
+--- Part B: Interactive Web Application (Gradio) ---
+
+Loading general text generation model (google/flan-t5-base)...
+Testing Gradio app generator function:
+  Sample Input : "What is deep learning?" [Concept Explanation]
+  Sample Output: "Deep learning is a type of computer science that uses machine learning to learn new things."
+
+Gradio Interface constructed successfully.
+To launch the local web server interactively, call `demo.launch()`.

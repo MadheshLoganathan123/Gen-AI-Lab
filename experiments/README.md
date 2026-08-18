@@ -1,4 +1,4 @@
-﻿# CS4V48 — GenAI & LLM Laboratory Experiments
+# CS4V48 — GenAI & LLM Laboratory Experiments
 
 This folder contains the shared lab repository for the CS4V48 Generative AI and LLM experiments.
 Each experiment is self-contained under its own directory with a script, requirements, and an output file.
@@ -12,6 +12,13 @@ Each experiment is self-contained under its own directory with a script, require
 | 3 | Experiment 3 | `conversational_chatbot.py` | DialoGPT chatbot conversation |
 | 4 | Experiment 4 | `summarization_qa.py` | Summarization and question answering |
 | 5 | Experiment 5 | `sentiment_classification.py` | Sentiment analysis and zero-shot classification |
+| 6 | Experiment 6 | `rag_system.py` | Retrieval-Augmented Generation using vector search |
+| 7 | Experiment 7 | `code_generation.py` | AI-powered code generation and debugging |
+| 8 | Experiment 8 | `image_generation.py` | Image generation using Stable Diffusion |
+| 9 | Experiment 9 | `image_captioning_vqa.py` | Vision-Language image captioning & Visual QA |
+| 10 | Experiment 10 | `model_finetuning.py` | Supervised fine-tuning & evaluation of foundation models |
+| 11 | Experiment 11 | `multimodal_genai.py` | Multimodal text, image, and speech generation pipeline |
+| 12 | Experiment 12 | `evaluation_and_deployment.py` | Model evaluation (ROUGE/BLEU) & Gradio web UI deployment |
 
 ## Experiment Details
 
@@ -45,28 +52,61 @@ Each experiment is self-contained under its own directory with a script, require
 - Description: Runs sentiment analysis on sample reviews and performs zero-shot document classification over candidate labels.
 - Output: classification results saved to `Experiment 5/outputs/output.txt`.
 
+### Experiment 6: Retrieval-Augmented Generation (RAG)
+- Script: `Experiment 6/rag_system.py`
+- Models: `all-MiniLM-L6-v2` for embeddings, FAISS for vector indexing, `google/flan-t5-base` for generation
+- Description: Implements a RAG pipeline that retrieves top-k relevant knowledge chunks and generates grounded answers.
+- Output: retrieved context and grounded generation saved to `Experiment 6/outputs/output.txt`.
+
+### Experiment 7: Code Generation & Debugging
+- Script: `Experiment 7/code_generation.py`
+- Model: `Salesforce/codegen-350M-mono`
+- Description: Generates code from natural language prompts and provides debugging assistance for buggy code snippets.
+- Output: code generation and debug suggestions saved to `Experiment 7/outputs/output.txt`.
+
+### Experiment 8: Image Generation Using Diffusion Models
+- Script: `Experiment 8/image_generation.py`
+- Model: `runwayml/stable-diffusion-v1-5`
+- Description: Generates high-quality images from text descriptions using the reverse diffusion process.
+- Output: generated image files and execution log saved to `Experiment 8/outputs/output.txt`.
+
+### Experiment 9: Vision-Language Models (Image Captioning & VQA)
+- Script: `Experiment 9/image_captioning_vqa.py`
+- Models: `Salesforce/blip-image-captioning-base`, `Salesforce/blip-vqa-base`
+- Description: Generates natural language image descriptions and answers visual questions about image scenes.
+- Output: captioning and VQA results saved to `Experiment 9/outputs/output.txt`.
+
+### Experiment 10: Foundation Model Fine-Tuning & Evaluation
+- Script: `Experiment 10/model_finetuning.py`
+- Models: `distilbert-base-uncased` with Hugging Face Trainer
+- Description: Fine-tunes a transformer model on a custom intent classification dataset and evaluates accuracy and F1 score.
+- Output: training metrics and evaluation results saved to `Experiment 10/outputs/output.txt`.
+
+### Experiment 11: Multimodal Generative AI Application
+- Script: `Experiment 11/multimodal_genai.py`
+- Models: `google/flan-t5-base` (text), `runwayml/stable-diffusion-v1-5` (image), `gTTS` (speech)
+- Description: End-to-end multimodal pipeline generating story narrative, visual image illustration, and audio narration.
+- Output: generated image, speech mp3, and logs saved to `Experiment 11/outputs/output.txt`.
+
+### Experiment 12: GenAI Model Evaluation & Web App Deployment
+- Script: `Experiment 12/evaluation_and_deployment.py`
+- Models & Frameworks: BART-large-cnn, Flan-T5, `evaluate` (ROUGE/BLEU), `gradio`
+- Description: Benchmarks text generation quality with quantitative metrics (ROUGE-1, ROUGE-2, ROUGE-L, BLEU) and constructs an interactive Gradio web application.
+- Output: benchmark scores and web interface logs saved to `Experiment 12/outputs/output.txt`.
+
 ## How to Run an Experiment
 
-1. Open a terminal in this folder.
-2. Change to the experiment directory.
-3. Install dependencies:
+1. Activate the shared virtual environment:
 
 ```powershell
-cd "Experiment 1"
-python -m pip install -r requirements.txt
+.\.venv\Scripts\Activate.ps1
 ```
 
-4. Run the main script:
+2. Run any experiment directly:
 
 ```powershell
-python text_generation.py
+python "Experiment 9/image_captioning_vqa.py"
 ```
 
-5. Repeat for other experiments.
+3. Outputs are automatically saved in the respective `Experiment <N>/outputs/` directory.
 
-## Notes
-
-- Each experiment stores its output in `outputs/output.txt`.
-- All experiments use Hugging Face transformers and Torch.
-- Models are downloaded automatically and require internet access the first time they run.
-- Experiment 3 is interactive and reads user input from the terminal.

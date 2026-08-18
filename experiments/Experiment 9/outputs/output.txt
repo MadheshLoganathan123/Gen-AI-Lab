@@ -1,0 +1,24 @@
+============================================================
+Experiment 9: Image Captioning & Visual Question Answering
+============================================================
+Running on device: cpu
+
+Sample test image saved to: experiments/Experiment 9/outputs/sample_scene.png
+
+--- Part A: Image Captioning (Salesforce/blip-image-captioning-base) ---
+
+Loading BLIP Image Captioning model...
+Generated Caption: a red house in a green field with a sun in the background
+
+--- Part B: Visual Question Answering (Salesforce/blip-vqa-base) ---
+
+Loading BLIP VQA model...
+
+Question: What color is the house?
+Answer:   red
+
+Question: What is in the sky?
+Answer:   sun
+
+Question: What color is the roof?
+Answer:   brown
